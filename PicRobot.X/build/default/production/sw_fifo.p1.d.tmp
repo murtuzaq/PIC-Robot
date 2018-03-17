@@ -1,0 +1,4 @@
+ build/default/production/sw_fifo.d  \
+ build/default/production/sw_fifo.p1:  \
+ sw_fifo.c  \
+sw_fifo.h 

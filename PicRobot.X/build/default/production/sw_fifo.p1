@@ -1,0 +1,182 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"24 sw_fifo.c
+[c E29 0 1 .. ]
+[n E29 . FIFO_FAIL FIFO_SUCCESS  ]
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;sw_fifo.h: 17: typedef enum {
+[; ;sw_fifo.h: 18: FIFO_FAIL = 0,
+[; ;sw_fifo.h: 19: FIFO_SUCCESS = 1
+[; ;sw_fifo.h: 20: }FIFO_STATUS;
+[; ;sw_fifo.h: 22: void Fifo_Init(void);
+[; ;sw_fifo.h: 23: FIFO_STATUS Fifo_Put(uint16_t data);
+[; ;sw_fifo.h: 24: FIFO_STATUS Fifo_Get(uint16_t *datapt);
+[; ;sw_fifo.h: 25: uint8_t Fifo_Size(void);
+"4 sw_fifo.c
+[v _PutI `uc ~T0 @X0 1 s ]
+[; ;sw_fifo.c: 4: static uint8_t PutI;
+"5
+[v _GetI `uc ~T0 @X0 1 s ]
+[; ;sw_fifo.c: 5: static uint8_t GetI;
+"6
+[v _Fifo `ui ~T0 @X0 -> 16 `i s ]
+[; ;sw_fifo.c: 6: static uint16_t Fifo[16];
+"10
+[v _Fifo_Init `(v ~T0 @X0 1 ef ]
+"11
+{
+[; ;sw_fifo.c: 10: void Fifo_Init(void)
+[; ;sw_fifo.c: 11: {
+[e :U _Fifo_Init ]
+[f ]
+"12
+[v _i `i ~T0 @X0 1 a ]
+[; ;sw_fifo.c: 12: int i = 0;
+[e = _i -> 0 `i ]
+[; ;sw_fifo.c: 14: for (i = 0; i < 16; i++)
+"14
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 16 `i 2  ]
+[e $U 3  ]
+"15
+[e :U 2 ]
+[; ;sw_fifo.c: 15: {
+{
+[; ;sw_fifo.c: 16: Fifo[i] = 0;
+"16
+[e = *U + &U _Fifo * -> -> _i `ui `ux -> -> # *U &U _Fifo `ui `ux -> -> 0 `i `ui ]
+"17
+}
+"14
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 16 `i 2  ]
+[e :U 3 ]
+"17
+}
+[; ;sw_fifo.c: 17: }
+[; ;sw_fifo.c: 19: PutI = GetI = 0;
+"19
+[e = _PutI = _GetI -> -> 0 `i `uc ]
+[; ;sw_fifo.c: 20: }
+"20
+[e :UE 1 ]
+}
+"23
+[v _Fifo_Put `(E29 ~T0 @X0 1 ef1`ui ]
+"24
+{
+[; ;sw_fifo.c: 23: FIFO_STATUS Fifo_Put(uint16_t data)
+[; ;sw_fifo.c: 24: {
+[e :U _Fifo_Put ]
+"23
+[v _data `ui ~T0 @X0 1 r1 ]
+"24
+[f ]
+[; ;sw_fifo.c: 25: if((PutI-GetI) & ~(16-1))
+"25
+[e $ ! != & - -> _PutI `i -> _GetI `i ~ - -> 16 `i -> 1 `i -> 0 `i 6  ]
+[; ;sw_fifo.c: 26: {
+"26
+{
+[; ;sw_fifo.c: 27: return(FIFO_FAIL);
+"27
+[e ) . `E29 0 ]
+[e $UE 5  ]
+"28
+}
+[e :U 6 ]
+[; ;sw_fifo.c: 28: }
+[; ;sw_fifo.c: 29: Fifo[PutI&(16-1)] = data;
+"29
+[e = *U + &U _Fifo * -> -> & -> _PutI `i - -> 16 `i -> 1 `i `ui `ux -> -> # *U &U _Fifo `ui `ux _data ]
+[; ;sw_fifo.c: 30: PutI++;
+"30
+[e ++ _PutI -> -> 1 `i `uc ]
+[; ;sw_fifo.c: 31: return(FIFO_SUCCESS);
+"31
+[e ) . `E29 1 ]
+[e $UE 5  ]
+[; ;sw_fifo.c: 32: }
+"32
+[e :UE 5 ]
+}
+"35
+[v _Fifo_Get `(E29 ~T0 @X0 1 ef1`*ui ]
+"36
+{
+[; ;sw_fifo.c: 35: FIFO_STATUS Fifo_Get(uint16_t *datapt)
+[; ;sw_fifo.c: 36: {
+[e :U _Fifo_Get ]
+"35
+[v _datapt `*ui ~T0 @X0 1 r1 ]
+"36
+[f ]
+[; ;sw_fifo.c: 37: if(PutI == GetI ){
+"37
+[e $ ! == -> _PutI `i -> _GetI `i 8  ]
+{
+[; ;sw_fifo.c: 38: return(FIFO_FAIL);
+"38
+[e ) . `E29 0 ]
+[e $UE 7  ]
+"39
+}
+[e :U 8 ]
+[; ;sw_fifo.c: 39: }
+[; ;sw_fifo.c: 40: *datapt = Fifo[GetI&(16-1)];
+"40
+[e = *U _datapt *U + &U _Fifo * -> -> & -> _GetI `i - -> 16 `i -> 1 `i `ui `ux -> -> # *U &U _Fifo `ui `ux ]
+[; ;sw_fifo.c: 41: GetI++;
+"41
+[e ++ _GetI -> -> 1 `i `uc ]
+[; ;sw_fifo.c: 42: return(FIFO_SUCCESS);
+"42
+[e ) . `E29 1 ]
+[e $UE 7  ]
+[; ;sw_fifo.c: 43: }
+"43
+[e :UE 7 ]
+}
+"46
+[v _Fifo_Size `(uc ~T0 @X0 1 ef ]
+"47
+{
+[; ;sw_fifo.c: 46: uint8_t Fifo_Size(void)
+[; ;sw_fifo.c: 47: {
+[e :U _Fifo_Size ]
+[f ]
+[; ;sw_fifo.c: 48: return ((PutI- GetI));
+"48
+[e ) -> - -> _PutI `i -> _GetI `i `uc ]
+[e $UE 9  ]
+[; ;sw_fifo.c: 49: }
+"49
+[e :UE 9 ]
+}

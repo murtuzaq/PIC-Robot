@@ -1,0 +1,446 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"31 os.h
+[v _OS_Signal `(v ~T0 @X0 0 ef1`*c ]
+"29
+[v _OS_Wait `(uc ~T0 @X0 0 ef1`*c ]
+"33
+[v _OS_Block `(v ~T0 @X0 0 ef1`*c ]
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;os.h: 20: void OS_AddThreads( void(*func1)(void),
+[; ;os.h: 21: void(*func2)(void),
+[; ;os.h: 22: void(*func3)(void),
+[; ;os.h: 23: void(*func4)(void));
+[; ;os.h: 25: void OS_Launch(void);
+[; ;os.h: 27: void OS_Scheduler(void);
+[; ;os.h: 29: uint8_t OS_Wait(int8_t *semaPt);
+[; ;os.h: 31: void OS_Signal(int8_t *semaPt);
+[; ;os.h: 33: void OS_Block(int8_t *semaPt);
+[; ;sema.h: 18: void SEMA_SetIRdetect(void);
+[; ;sema.h: 19: uint8_t SEMA_WaitForIRdetect(void);
+[; ;sema.h: 20: void SEMA_BlockOnIRdetect(void);
+[; ;sema.h: 22: void SEMA_SetTask2(void);
+[; ;sema.h: 23: uint8_t SEMA_WaitForTask2(void);
+[; ;sema.h: 24: void SEMA_BlockOnTask2(void);
+[; ;sema.h: 26: void SEMA_SetTask3(void);
+[; ;sema.h: 27: uint8_t SEMA_WaitForTask3(void);
+[; ;sema.h: 28: void SEMA_BlockOnTask3(void);
+[; ;sema.h: 30: void SEMA_SetTask4(void);
+[; ;sema.h: 31: uint8_t SEMA_WaitForTask4(void);
+[; ;sema.h: 32: void SEMA_BlockOnTask4(void);
+[; ;sema.h: 34: void SEMA_SetClock(void);
+[; ;sema.h: 35: uint8_t SEMA_WaitForClock(void);
+[; ;sema.h: 36: void SEMA_BlockOnClock(void);
+[; ;sema.h: 38: void SEMA_SetPICBot(void);
+[; ;sema.h: 39: uint8_t SEMA_WaitForPICBot(void);
+[; ;sema.h: 40: void SEMA_BlockOnPICBot(void);
+"4 sema.c
+[v _sema_irdetect `c ~T0 @X0 1 s ]
+[i _sema_irdetect
+-> -> 0 `i `c
+]
+[; ;sema.c: 4: static int8_t sema_irdetect = 0;
+"5
+[v _sema_picbot `c ~T0 @X0 1 s ]
+[i _sema_picbot
+-> -> 0 `i `c
+]
+[; ;sema.c: 5: static int8_t sema_picbot = 0;
+"6
+[v _sema_clock `c ~T0 @X0 1 s ]
+[i _sema_clock
+-> -> 0 `i `c
+]
+[; ;sema.c: 6: static int8_t sema_clock = 0;
+"8
+[v _sema_Task2 `c ~T0 @X0 1 s ]
+[i _sema_Task2
+-> -> 0 `i `c
+]
+[; ;sema.c: 8: static int8_t sema_Task2 = 0;
+"9
+[v _sema_Task3 `c ~T0 @X0 1 s ]
+[i _sema_Task3
+-> -> 0 `i `c
+]
+[; ;sema.c: 9: static int8_t sema_Task3 = 0;
+"10
+[v _sema_Task4 `c ~T0 @X0 1 s ]
+[i _sema_Task4
+-> -> 0 `i `c
+]
+[; ;sema.c: 10: static int8_t sema_Task4 = 0;
+"12
+[v _SEMA_SetIRdetect `(v ~T0 @X0 1 ef ]
+"13
+{
+[; ;sema.c: 12: void SEMA_SetIRdetect(void)
+[; ;sema.c: 13: {
+[e :U _SEMA_SetIRdetect ]
+[f ]
+[; ;sema.c: 14: OS_Signal(&sema_irdetect);
+"14
+[e ( _OS_Signal (1 &U _sema_irdetect ]
+[; ;sema.c: 15: }
+"15
+[e :UE 1 ]
+}
+"17
+[v _SEMA_WaitForIRdetect `(uc ~T0 @X0 1 ef ]
+"18
+{
+[; ;sema.c: 17: uint8_t SEMA_WaitForIRdetect(void)
+[; ;sema.c: 18: {
+[e :U _SEMA_WaitForIRdetect ]
+[f ]
+[; ;sema.c: 19: if(OS_Wait(&sema_irdetect))
+"19
+[e $ ! != -> ( _OS_Wait (1 &U _sema_irdetect `i -> -> -> 0 `i `uc `i 3  ]
+[; ;sema.c: 20: return(1);
+"20
+[e ) -> -> 1 `i `uc ]
+[e $UE 2  ]
+[e $U 4  ]
+"21
+[e :U 3 ]
+[; ;sema.c: 21: else
+[; ;sema.c: 22: return(0);
+"22
+[e ) -> -> 0 `i `uc ]
+[e $UE 2  ]
+[e :U 4 ]
+[; ;sema.c: 23: }
+"23
+[e :UE 2 ]
+}
+"25
+[v _SEMA_BlockOnIRdetect `(v ~T0 @X0 1 ef ]
+"26
+{
+[; ;sema.c: 25: void SEMA_BlockOnIRdetect(void)
+[; ;sema.c: 26: {
+[e :U _SEMA_BlockOnIRdetect ]
+[f ]
+[; ;sema.c: 27: OS_Block(&sema_picbot);
+"27
+[e ( _OS_Block (1 &U _sema_picbot ]
+[; ;sema.c: 28: }
+"28
+[e :UE 5 ]
+}
+"30
+[v _SEMA_SetPICBot `(v ~T0 @X0 1 ef ]
+"31
+{
+[; ;sema.c: 30: void SEMA_SetPICBot(void)
+[; ;sema.c: 31: {
+[e :U _SEMA_SetPICBot ]
+[f ]
+[; ;sema.c: 32: OS_Signal(&sema_picbot);
+"32
+[e ( _OS_Signal (1 &U _sema_picbot ]
+[; ;sema.c: 33: }
+"33
+[e :UE 6 ]
+}
+"35
+[v _SEMA_WaitForPICBot `(uc ~T0 @X0 1 ef ]
+"36
+{
+[; ;sema.c: 35: uint8_t SEMA_WaitForPICBot(void)
+[; ;sema.c: 36: {
+[e :U _SEMA_WaitForPICBot ]
+[f ]
+[; ;sema.c: 37: if(OS_Wait(&sema_picbot))
+"37
+[e $ ! != -> ( _OS_Wait (1 &U _sema_picbot `i -> -> -> 0 `i `uc `i 8  ]
+[; ;sema.c: 38: return(1);
+"38
+[e ) -> -> 1 `i `uc ]
+[e $UE 7  ]
+[e $U 9  ]
+"39
+[e :U 8 ]
+[; ;sema.c: 39: else
+[; ;sema.c: 40: return(0);
+"40
+[e ) -> -> 0 `i `uc ]
+[e $UE 7  ]
+[e :U 9 ]
+[; ;sema.c: 41: }
+"41
+[e :UE 7 ]
+}
+"43
+[v _SEMA_BlockOnPICBot `(v ~T0 @X0 1 ef ]
+"44
+{
+[; ;sema.c: 43: void SEMA_BlockOnPICBot(void)
+[; ;sema.c: 44: {
+[e :U _SEMA_BlockOnPICBot ]
+[f ]
+[; ;sema.c: 45: OS_Block(&sema_picbot);
+"45
+[e ( _OS_Block (1 &U _sema_picbot ]
+[; ;sema.c: 46: }
+"46
+[e :UE 10 ]
+}
+"48
+[v _SEMA_SetClock `(v ~T0 @X0 1 ef ]
+"49
+{
+[; ;sema.c: 48: void SEMA_SetClock(void)
+[; ;sema.c: 49: {
+[e :U _SEMA_SetClock ]
+[f ]
+[; ;sema.c: 50: OS_Signal(&sema_clock);
+"50
+[e ( _OS_Signal (1 &U _sema_clock ]
+[; ;sema.c: 51: }
+"51
+[e :UE 11 ]
+}
+"53
+[v _SEMA_WaitForClock `(uc ~T0 @X0 1 ef ]
+"54
+{
+[; ;sema.c: 53: uint8_t SEMA_WaitForClock(void)
+[; ;sema.c: 54: {
+[e :U _SEMA_WaitForClock ]
+[f ]
+[; ;sema.c: 55: if(OS_Wait(&sema_clock))
+"55
+[e $ ! != -> ( _OS_Wait (1 &U _sema_clock `i -> -> -> 0 `i `uc `i 13  ]
+[; ;sema.c: 56: return(1);
+"56
+[e ) -> -> 1 `i `uc ]
+[e $UE 12  ]
+[e $U 14  ]
+"57
+[e :U 13 ]
+[; ;sema.c: 57: else
+[; ;sema.c: 58: return(0);
+"58
+[e ) -> -> 0 `i `uc ]
+[e $UE 12  ]
+[e :U 14 ]
+[; ;sema.c: 59: }
+"59
+[e :UE 12 ]
+}
+"61
+[v _SEMA_BlockOnClock `(v ~T0 @X0 1 ef ]
+"62
+{
+[; ;sema.c: 61: void SEMA_BlockOnClock(void)
+[; ;sema.c: 62: {
+[e :U _SEMA_BlockOnClock ]
+[f ]
+[; ;sema.c: 63: OS_Block(&sema_clock);
+"63
+[e ( _OS_Block (1 &U _sema_clock ]
+[; ;sema.c: 64: }
+"64
+[e :UE 15 ]
+}
+"67
+[v _SEMA_SetTask2 `(v ~T0 @X0 1 ef ]
+"68
+{
+[; ;sema.c: 67: void SEMA_SetTask2(void)
+[; ;sema.c: 68: {
+[e :U _SEMA_SetTask2 ]
+[f ]
+[; ;sema.c: 69: OS_Signal(&sema_Task2);
+"69
+[e ( _OS_Signal (1 &U _sema_Task2 ]
+[; ;sema.c: 70: }
+"70
+[e :UE 16 ]
+}
+"72
+[v _SEMA_WaitForTask2 `(uc ~T0 @X0 1 ef ]
+"73
+{
+[; ;sema.c: 72: uint8_t SEMA_WaitForTask2(void)
+[; ;sema.c: 73: {
+[e :U _SEMA_WaitForTask2 ]
+[f ]
+[; ;sema.c: 74: if(OS_Wait(&sema_Task2))
+"74
+[e $ ! != -> ( _OS_Wait (1 &U _sema_Task2 `i -> -> -> 0 `i `uc `i 18  ]
+[; ;sema.c: 75: return(1);
+"75
+[e ) -> -> 1 `i `uc ]
+[e $UE 17  ]
+[e $U 19  ]
+"76
+[e :U 18 ]
+[; ;sema.c: 76: else
+[; ;sema.c: 77: return(0);
+"77
+[e ) -> -> 0 `i `uc ]
+[e $UE 17  ]
+[e :U 19 ]
+[; ;sema.c: 78: }
+"78
+[e :UE 17 ]
+}
+"80
+[v _SEMA_BlockOnTask2 `(v ~T0 @X0 1 ef ]
+"81
+{
+[; ;sema.c: 80: void SEMA_BlockOnTask2(void)
+[; ;sema.c: 81: {
+[e :U _SEMA_BlockOnTask2 ]
+[f ]
+[; ;sema.c: 82: OS_Block(&sema_Task2);
+"82
+[e ( _OS_Block (1 &U _sema_Task2 ]
+[; ;sema.c: 83: }
+"83
+[e :UE 20 ]
+}
+"85
+[v _SEMA_SetTask3 `(v ~T0 @X0 1 ef ]
+"86
+{
+[; ;sema.c: 85: void SEMA_SetTask3(void)
+[; ;sema.c: 86: {
+[e :U _SEMA_SetTask3 ]
+[f ]
+[; ;sema.c: 87: OS_Signal(&sema_Task3);
+"87
+[e ( _OS_Signal (1 &U _sema_Task3 ]
+[; ;sema.c: 88: }
+"88
+[e :UE 21 ]
+}
+"90
+[v _SEMA_WaitForTask3 `(uc ~T0 @X0 1 ef ]
+"91
+{
+[; ;sema.c: 90: uint8_t SEMA_WaitForTask3(void)
+[; ;sema.c: 91: {
+[e :U _SEMA_WaitForTask3 ]
+[f ]
+[; ;sema.c: 92: if(OS_Wait(&sema_Task3))
+"92
+[e $ ! != -> ( _OS_Wait (1 &U _sema_Task3 `i -> -> -> 0 `i `uc `i 23  ]
+[; ;sema.c: 93: return(1);
+"93
+[e ) -> -> 1 `i `uc ]
+[e $UE 22  ]
+[e $U 24  ]
+"94
+[e :U 23 ]
+[; ;sema.c: 94: else
+[; ;sema.c: 95: return(0);
+"95
+[e ) -> -> 0 `i `uc ]
+[e $UE 22  ]
+[e :U 24 ]
+[; ;sema.c: 96: }
+"96
+[e :UE 22 ]
+}
+"98
+[v _SEMA_BlockOnTask3 `(v ~T0 @X0 1 ef ]
+"99
+{
+[; ;sema.c: 98: void SEMA_BlockOnTask3(void)
+[; ;sema.c: 99: {
+[e :U _SEMA_BlockOnTask3 ]
+[f ]
+[; ;sema.c: 100: OS_Block(&sema_Task3);
+"100
+[e ( _OS_Block (1 &U _sema_Task3 ]
+[; ;sema.c: 101: }
+"101
+[e :UE 25 ]
+}
+"103
+[v _SEMA_SetTask4 `(v ~T0 @X0 1 ef ]
+"104
+{
+[; ;sema.c: 103: void SEMA_SetTask4(void)
+[; ;sema.c: 104: {
+[e :U _SEMA_SetTask4 ]
+[f ]
+[; ;sema.c: 105: OS_Signal(&sema_Task4);
+"105
+[e ( _OS_Signal (1 &U _sema_Task4 ]
+[; ;sema.c: 106: }
+"106
+[e :UE 26 ]
+}
+"108
+[v _SEMA_WaitForTask4 `(uc ~T0 @X0 1 ef ]
+"109
+{
+[; ;sema.c: 108: uint8_t SEMA_WaitForTask4(void)
+[; ;sema.c: 109: {
+[e :U _SEMA_WaitForTask4 ]
+[f ]
+[; ;sema.c: 110: if(OS_Wait(&sema_Task4))
+"110
+[e $ ! != -> ( _OS_Wait (1 &U _sema_Task4 `i -> -> -> 0 `i `uc `i 28  ]
+[; ;sema.c: 111: return(1);
+"111
+[e ) -> -> 1 `i `uc ]
+[e $UE 27  ]
+[e $U 29  ]
+"112
+[e :U 28 ]
+[; ;sema.c: 112: else
+[; ;sema.c: 113: return(0);
+"113
+[e ) -> -> 0 `i `uc ]
+[e $UE 27  ]
+[e :U 29 ]
+[; ;sema.c: 114: }
+"114
+[e :UE 27 ]
+}
+"116
+[v _SEMA_BlockOnTask4 `(v ~T0 @X0 1 ef ]
+"117
+{
+[; ;sema.c: 116: void SEMA_BlockOnTask4(void)
+[; ;sema.c: 117: {
+[e :U _SEMA_BlockOnTask4 ]
+[f ]
+[; ;sema.c: 118: OS_Block(&sema_Task4);
+"118
+[e ( _OS_Block (1 &U _sema_Task4 ]
+[; ;sema.c: 119: }
+"119
+[e :UE 30 ]
+}

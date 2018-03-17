@@ -1,0 +1,251 @@
+
+# 1 "sema.c"
+
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
+typedef signed char int8_t;
+
+# 20
+typedef signed int int16_t;
+
+# 28
+typedef signed short long int int24_t;
+
+# 36
+typedef signed long int int32_t;
+
+# 43
+typedef unsigned char uint8_t;
+
+# 49
+typedef unsigned int uint16_t;
+
+# 56
+typedef unsigned short long int uint24_t;
+
+# 63
+typedef unsigned long int uint32_t;
+
+# 71
+typedef signed char int_least8_t;
+
+# 78
+typedef signed int int_least16_t;
+
+# 90
+typedef signed short long int int_least24_t;
+
+# 98
+typedef signed long int int_least32_t;
+
+# 105
+typedef unsigned char uint_least8_t;
+
+# 111
+typedef unsigned int uint_least16_t;
+
+# 121
+typedef unsigned short long int uint_least24_t;
+
+# 128
+typedef unsigned long int uint_least32_t;
+
+# 137
+typedef signed char int_fast8_t;
+
+# 144
+typedef signed int int_fast16_t;
+
+# 156
+typedef signed short long int int_fast24_t;
+
+# 164
+typedef signed long int int_fast32_t;
+
+# 171
+typedef unsigned char uint_fast8_t;
+
+# 177
+typedef unsigned int uint_fast16_t;
+
+# 187
+typedef unsigned short long int uint_fast24_t;
+
+# 194
+typedef unsigned long int uint_fast32_t;
+
+# 200
+typedef int32_t intmax_t;
+
+
+
+
+typedef uint32_t uintmax_t;
+
+
+
+
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+
+# 20 "os.h"
+void OS_AddThreads( void(*func1)(void),
+void(*func2)(void),
+void(*func3)(void),
+void(*func4)(void));
+
+void OS_Launch(void);
+
+void OS_Scheduler(void);
+
+uint8_t OS_Wait(int8_t *semaPt);
+
+void OS_Signal(int8_t *semaPt);
+
+void OS_Block(int8_t *semaPt);
+
+# 18 "sema.h"
+void SEMA_SetIRdetect(void);
+uint8_t SEMA_WaitForIRdetect(void);
+void SEMA_BlockOnIRdetect(void);
+
+void SEMA_SetTask2(void);
+uint8_t SEMA_WaitForTask2(void);
+void SEMA_BlockOnTask2(void);
+
+void SEMA_SetTask3(void);
+uint8_t SEMA_WaitForTask3(void);
+void SEMA_BlockOnTask3(void);
+
+void SEMA_SetTask4(void);
+uint8_t SEMA_WaitForTask4(void);
+void SEMA_BlockOnTask4(void);
+
+void SEMA_SetClock(void);
+uint8_t SEMA_WaitForClock(void);
+void SEMA_BlockOnClock(void);
+
+void SEMA_SetPICBot(void);
+uint8_t SEMA_WaitForPICBot(void);
+void SEMA_BlockOnPICBot(void);
+
+# 4 "sema.c"
+static int8_t sema_irdetect = 0;
+static int8_t sema_picbot = 0;
+static int8_t sema_clock = 0;
+
+static int8_t sema_Task2 = 0;
+static int8_t sema_Task3 = 0;
+static int8_t sema_Task4 = 0;
+
+void SEMA_SetIRdetect(void)
+{
+OS_Signal(&sema_irdetect);
+}
+
+uint8_t SEMA_WaitForIRdetect(void)
+{
+if(OS_Wait(&sema_irdetect))
+return(1);
+else
+return(0);
+}
+
+void SEMA_BlockOnIRdetect(void)
+{
+OS_Block(&sema_picbot);
+}
+
+void SEMA_SetPICBot(void)
+{
+OS_Signal(&sema_picbot);
+}
+
+uint8_t SEMA_WaitForPICBot(void)
+{
+if(OS_Wait(&sema_picbot))
+return(1);
+else
+return(0);
+}
+
+void SEMA_BlockOnPICBot(void)
+{
+OS_Block(&sema_picbot);
+}
+
+void SEMA_SetClock(void)
+{
+OS_Signal(&sema_clock);
+}
+
+uint8_t SEMA_WaitForClock(void)
+{
+if(OS_Wait(&sema_clock))
+return(1);
+else
+return(0);
+}
+
+void SEMA_BlockOnClock(void)
+{
+OS_Block(&sema_clock);
+}
+
+
+void SEMA_SetTask2(void)
+{
+OS_Signal(&sema_Task2);
+}
+
+uint8_t SEMA_WaitForTask2(void)
+{
+if(OS_Wait(&sema_Task2))
+return(1);
+else
+return(0);
+}
+
+void SEMA_BlockOnTask2(void)
+{
+OS_Block(&sema_Task2);
+}
+
+void SEMA_SetTask3(void)
+{
+OS_Signal(&sema_Task3);
+}
+
+uint8_t SEMA_WaitForTask3(void)
+{
+if(OS_Wait(&sema_Task3))
+return(1);
+else
+return(0);
+}
+
+void SEMA_BlockOnTask3(void)
+{
+OS_Block(&sema_Task3);
+}
+
+void SEMA_SetTask4(void)
+{
+OS_Signal(&sema_Task4);
+}
+
+uint8_t SEMA_WaitForTask4(void)
+{
+if(OS_Wait(&sema_Task4))
+return(1);
+else
+return(0);
+}
+
+void SEMA_BlockOnTask4(void)
+{
+OS_Block(&sema_Task4);
+}

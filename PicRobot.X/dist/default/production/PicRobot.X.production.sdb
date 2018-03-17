@@ -1,0 +1,1097 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"112 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.c
+[e E3852 . `uc
+FIFO_FAIL 0
+FIFO_SUCCESS 1
+]
+"24 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sw_fifo.c
+[e E29 . `uc
+FIFO_FAIL 0
+FIFO_SUCCESS 1
+]
+"13 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\PICBot.c
+[e E128 . `uc
+FIFO_FAIL 0
+FIFO_SUCCESS 1
+]
+"63
+[e E61 . `uc
+stop 0
+forward 1
+reverse 2
+]
+"5 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\wheel4d.c
+[e E1 . `uc
+stop 0
+forward 1
+reverse 2
+]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"12 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\clock.c
+[v _CLOCK_Task CLOCK_Task `(v  1 e 1 0 ]
+"42
+[v _CLOCK_Enable CLOCK_Enable `(v  1 e 1 0 ]
+[v i2_CLOCK_Enable CLOCK_Enable `(v  1 e 1 0 ]
+"47
+[v _CLOCK_Disable CLOCK_Disable `(v  1 e 1 0 ]
+"52
+[v _CLOCK_Reload CLOCK_Reload `(v  1 e 1 0 ]
+"58
+[v _CLOCK_ReadTimer CLOCK_ReadTimer `(ui  1 e 2 0 ]
+[v i2_CLOCK_ReadTimer CLOCK_ReadTimer `(ui  1 e 2 0 ]
+"69
+[v _CLOCK_Time_Tick CLOCK_Time_Tick `(ui  1 e 2 0 ]
+"6 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\debug.c
+[v _DEBUG_Pin0Enable DEBUG_Pin0Enable `(v  1 e 1 0 ]
+"23
+[v _DEBUG_Pin0Toggle DEBUG_Pin0Toggle `(v  1 e 1 0 ]
+"45 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.c
+[v _IR_Task IR_Task `(v  1 e 1 0 ]
+"83
+[v _ir_end ir_end `(v  1 e 1 0 ]
+"88
+[v _ir_Begin ir_Begin `(v  1 e 1 0 ]
+"93
+[v _ir_bitcollect ir_bitcollect `(v  1 e 1 0 ]
+"109
+[v _ir_terminate ir_terminate `(v  1 e 1 0 ]
+"36 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.h
+[s S906 . 3 `ui 1 dtime 2 0 `uc 1 level 1 2 ]
+"118 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.c
+[v _IR_handle IR_handle `(*.39S906  1 e 2 0 ]
+"123
+[v _IR_Init IR_Init `(v  1 e 1 0 ]
+"11 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\isr.c
+[v _HighISR HighISR `II(v  1 e 1 0 ]
+"37
+[v _LowISR LowISR `IIL(v  1 e 1 0 ]
+"4 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\led.c
+[v _LED_Enable LED_Enable `(v  1 e 1 0 ]
+"11
+[v _LED_On LED_On `(v  1 e 1 0 ]
+"16
+[v _LED_Off LED_Off `(v  1 e 1 0 ]
+"37 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"68
+[v _task4 task4 `(v  1 e 1 0 ]
+"10 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_config.c
+[v _CONFIG_mcu CONFIG_mcu `(v  1 e 1 0 ]
+"5 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_int0.c
+[v _INT0_Init INT0_Init `(v  1 e 1 0 ]
+"14
+[v _INT0_Enable INT0_Enable `(v  1 e 1 0 ]
+"22
+[v _INT0_RisingEdge INT0_RisingEdge `(v  1 e 1 0 ]
+"27
+[v _INT0_FallingEdge INT0_FallingEdge `(v  1 e 1 0 ]
+[v i2_INT0_FallingEdge INT0_FallingEdge `(v  1 e 1 0 ]
+"8 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_interrupt.c
+[v _INTERRUPT_Enable INTERRUPT_Enable `(v  1 e 1 0 ]
+"14
+[v _INTERRUPT_Init INTERRUPT_Init `(v  1 e 1 0 ]
+"5 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_oscillator.c
+[v _OSCILLATOR_Init OSCILLATOR_Init `(v  1 e 1 0 ]
+"4 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_ports.c
+[v _PORTS_Init PORTS_Init `(v  1 e 1 0 ]
+"8 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_tmr0.c
+[v _TMR0_Init TMR0_Init `(v  1 e 1 0 ]
+"30
+[v _TMR0_Enable TMR0_Enable `(v  1 e 1 0 ]
+[v i2_TMR0_Enable TMR0_Enable `(v  1 e 1 0 ]
+"36
+[v _TMR0_Disable TMR0_Disable `(v  1 e 1 0 ]
+"42
+[v _TMR0_ReadTimer TMR0_ReadTimer `(ui  1 e 2 0 ]
+[v i2_TMR0_ReadTimer TMR0_ReadTimer `(ui  1 e 2 0 ]
+"53
+[v _TMR0_Reload TMR0_Reload `(v  1 e 1 0 ]
+"37 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\os.c
+[v _OS_AddThreads OS_AddThreads `(v  1 e 1 0 ]
+"63
+[v _OS_Launch OS_Launch `(v  1 e 1 0 ]
+"76
+[v _OS_Scheduler OS_Scheduler `(v  1 e 1 0 ]
+"114
+[v _OS_Wait OS_Wait `(uc  1 e 1 0 ]
+"143
+[v _OS_Signal OS_Signal `(v  1 e 1 0 ]
+[v i2_OS_Signal OS_Signal `(v  1 e 1 0 ]
+"186
+[v _OS_Block OS_Block `(v  1 e 1 0 ]
+"10 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\PICBot.c
+[v _PICBOT_Task PICBOT_Task `(v  1 e 1 0 ]
+"61
+[v _PICBOT_Stop PICBOT_Stop `(v  1 e 1 0 ]
+"69
+[v _PICBOT_fwd PICBOT_fwd `(v  1 e 1 0 ]
+"77
+[v _PICBOT_rvs PICBOT_rvs `(v  1 e 1 0 ]
+"86
+[v _PICBOT_lft PICBOT_lft `(v  1 e 1 0 ]
+"94
+[v _PICBOT_rgt PICBOT_rgt `(v  1 e 1 0 ]
+"12 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sema.c
+[v _SEMA_SetIRdetect SEMA_SetIRdetect `(v  1 e 1 0 ]
+"25
+[v _SEMA_BlockOnIRdetect SEMA_BlockOnIRdetect `(v  1 e 1 0 ]
+"30
+[v _SEMA_SetPICBot SEMA_SetPICBot `(v  1 e 1 0 ]
+"35
+[v _SEMA_WaitForPICBot SEMA_WaitForPICBot `(uc  1 e 1 0 ]
+"43
+[v _SEMA_BlockOnPICBot SEMA_BlockOnPICBot `(v  1 e 1 0 ]
+"48
+[v _SEMA_SetClock SEMA_SetClock `(v  1 e 1 0 ]
+"53
+[v _SEMA_WaitForClock SEMA_WaitForClock `(uc  1 e 1 0 ]
+"108
+[v _SEMA_WaitForTask4 SEMA_WaitForTask4 `(uc  1 e 1 0 ]
+"10 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sw_fifo.c
+[v _Fifo_Init Fifo_Init `(v  1 e 1 0 ]
+"23
+[v _Fifo_Put Fifo_Put `(E3852  1 e 1 0 ]
+"35
+[v _Fifo_Get Fifo_Get `(E29  1 e 1 0 ]
+"4 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\wheel4d.c
+[v _Wheel_Front_Right Wheel_Front_Right `(v  1 e 1 0 ]
+"25
+[v _Wheel_Front_Left Wheel_Front_Left `(v  1 e 1 0 ]
+"47
+[v _Wheel_Back_Right Wheel_Back_Right `(v  1 e 1 0 ]
+"69
+[v _Wheel_Back_Left Wheel_Back_Left `(v  1 e 1 0 ]
+"91
+[v _Wheel_Init Wheel_Init `(v  1 e 1 0 ]
+"103
+[v _Motor_Right_B_1A Motor_Right_B_1A `(v  1 e 1 0 ]
+"108
+[v _Motor_Right_B_1B Motor_Right_B_1B `(v  1 e 1 0 ]
+"113
+[v _Motor_Right_A_1A Motor_Right_A_1A `(v  1 e 1 0 ]
+"118
+[v _Motor_Right_A_1B Motor_Right_A_1B `(v  1 e 1 0 ]
+"123
+[v _Motor_Left_B_1A Motor_Left_B_1A `(v  1 e 1 0 ]
+"128
+[v _Motor_Left_B_1B Motor_Left_B_1B `(v  1 e 1 0 ]
+"133
+[v _Motor_Left_A_1A Motor_Left_A_1A `(v  1 e 1 0 ]
+"138
+[v _Motor_Left_A_1B Motor_Left_A_1B `(v  1 e 1 0 ]
+[s S700 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2481 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4550.h
+[s S1015 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S1023 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S1026 . 1 `S700 1 . 1 0 `S1015 1 . 1 0 `S1023 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES1026  1 e 1 @3969 ]
+"2971
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S1295 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+]
+"2996
+[s S1303 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+]
+[u S1311 . 1 `S1295 1 . 1 0 `S1303 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1311  1 e 1 @3977 ]
+"3071
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+[s S1331 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3098
+[s S1340 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S1349 . 1 `S1331 1 . 1 0 `S1340 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1349  1 e 1 @3978 ]
+"3183
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"3261
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3373
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+[s S765 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"3390
+[s S769 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S773 . 1 `S765 1 . 1 0 `S769 1 . 1 0 ]
+[v _LATEbits LATEbits `VES773  1 e 1 @3981 ]
+"3425
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+[s S1237 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+]
+"3455
+[s S1245 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+]
+[u S1253 . 1 `S1237 1 . 1 0 `S1245 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES1253  1 e 1 @3986 ]
+"3623
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S691 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"3655
+[u S709 . 1 `S691 1 . 1 0 `S700 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES709  1 e 1 @3987 ]
+"3845
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"3999
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4221
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S785 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+]
+"4243
+[s S789 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S793 . 1 `S785 1 . 1 0 `S789 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES793  1 e 1 @3990 ]
+[s S296 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 SPPIE 1 0 :1:7 
+]
+"4406
+[s S305 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S311 . 1 `S296 1 . 1 0 `S305 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES311  1 e 1 @3997 ]
+[s S261 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4490
+[s S270 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S276 . 1 `S261 1 . 1 0 `S270 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES276  1 e 1 @3998 ]
+[s S331 . 1 `uc 1 TMR1IP 1 0 :1:0 
+`uc 1 TMR2IP 1 0 :1:1 
+`uc 1 CCP1IP 1 0 :1:2 
+`uc 1 SSPIP 1 0 :1:3 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+`uc 1 ADIP 1 0 :1:6 
+`uc 1 SPPIP 1 0 :1:7 
+]
+"4574
+[s S340 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IP 1 0 :1:4 
+`uc 1 RC1IP 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIP 1 0 :1:7 
+]
+[u S346 . 1 `S331 1 . 1 0 `S340 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES346  1 e 1 @3999 ]
+"4634
+[v _PIE2 PIE2 `VEuc  1 e 1 @4000 ]
+"4705
+[v _PIR2 PIR2 `VEuc  1 e 1 @4001 ]
+"4776
+[v _IPR2 IPR2 `VEuc  1 e 1 @4002 ]
+[s S1428 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 VCFG 1 0 :2:4 
+]
+"6604
+[s S1431 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+]
+[s S1438 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CHSN3 1 0 :1:3 
+`uc 1 VCFG01 1 0 :1:4 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S1443 . 1 `S1428 1 . 1 0 `S1431 1 . 1 0 `S1438 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES1443  1 e 1 @4033 ]
+"7530
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+[s S445 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"7586
+[s S447 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S450 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S453 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S456 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S459 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S468 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_IPEN 1 0 :1:7 
+]
+[s S471 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 nIPEN 1 0 :1:7 
+]
+[u S479 . 1 `S445 1 . 1 0 `S447 1 . 1 0 `S450 1 . 1 0 `S453 1 . 1 0 `S456 1 . 1 0 `S459 1 . 1 0 `S468 1 . 1 0 `S471 1 . 1 0 ]
+[v _RCONbits RCONbits `VES479  1 e 1 @4048 ]
+[s S174 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"8007
+[s S180 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S188 . 1 `S174 1 . 1 0 `S180 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES188  1 e 1 @4051 ]
+[s S591 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"8087
+[s S598 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+[u S602 . 1 `S591 1 . 1 0 `S598 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES602  1 e 1 @4053 ]
+"8144
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"8151
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S366 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 INT2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1IE 1 0 :1:3 
+`uc 1 INT2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1IP 1 0 :1:6 
+`uc 1 INT2IP 1 0 :1:7 
+]
+"8438
+[s S375 . 1 `uc 1 INT1F 1 0 :1:0 
+`uc 1 INT2F 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1E 1 0 :1:3 
+`uc 1 INT2E 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1P 1 0 :1:6 
+`uc 1 INT2P 1 0 :1:7 
+]
+[u S384 . 1 `S366 1 . 1 0 `S375 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES384  1 e 1 @4080 ]
+[s S406 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"8530
+[s S409 . 1 `uc 1 RBIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S418 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S423 . 1 `S406 1 . 1 0 `S409 1 . 1 0 `S418 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES423  1 e 1 @4081 ]
+[s S212 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8612
+[s S221 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S230 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S234 . 1 `S212 1 . 1 0 `S221 1 . 1 0 `S230 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES234  1 e 1 @4082 ]
+[s S906 . 3 `ui 1 dtime 2 0 `uc 1 level 1 2 ]
+"17 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.c
+[v _irhandle irhandle `S906  1 s 3 irhandle ]
+[s S909 . 2 `uc 1 Input 1 0 `uc 1 state 1 1 ]
+"18
+[v _irstate irstate `S909  1 s 2 irstate ]
+"19
+[v _IRdata IRdata `ui  1 s 2 IRdata ]
+"20
+[v _IRdigit IRdigit `uc  1 s 1 IRdigit ]
+[s S913 . 6 `*.37(v 1 Output_Func 2 0 `[4]uc 1 Next 4 2 ]
+"35
+[v _IRSTATEMACHINE IRSTATEMACHINE `C[4]S913  1 e 24 0 ]
+"34 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\main.c
+[v _l l `i  1 e 2 0 ]
+"6 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEui  1 e 2 0 ]
+"27 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\os.c
+[s S104 tcb 6 `*.37(v 1 func 2 0 `*.39S104 1 next 2 2 `*.39c 1 blocked 2 4 ]
+[v _tcbs tcbs `[4]S104  1 e 24 0 ]
+"28
+[v _RunPt RunPt `*.39S104  1 e 2 0 ]
+"4 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sema.c
+[v _sema_irdetect sema_irdetect `c  1 s 1 sema_irdetect ]
+"5
+[v _sema_picbot sema_picbot `c  1 s 1 sema_picbot ]
+"6
+[v _sema_clock sema_clock `c  1 s 1 sema_clock ]
+"8
+[v _sema_Task2 sema_Task2 `c  1 s 1 sema_Task2 ]
+"9
+[v _sema_Task3 sema_Task3 `c  1 s 1 sema_Task3 ]
+"10
+[v _sema_Task4 sema_Task4 `c  1 s 1 sema_Task4 ]
+"4 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sw_fifo.c
+[v _PutI PutI `uc  1 s 1 PutI ]
+"5
+[v _GetI GetI `uc  1 s 1 GetI ]
+"6
+[v _Fifo Fifo `[16]ui  1 s 32 Fifo ]
+"37 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"65
+} 0
+"91 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\wheel4d.c
+[v _Wheel_Init Wheel_Init `(v  1 e 1 0 ]
+{
+"102
+} 0
+"76 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\os.c
+[v _OS_Scheduler OS_Scheduler `(v  1 e 1 0 ]
+{
+"78
+[s S104 tcb 6 `*.37(v 1 func 2 0 `*.39S104 1 next 2 2 `*.39c 1 blocked 2 4 ]
+[v OS_Scheduler@PrvRunPt PrvRunPt `*.39S104  1 a 2 25 ]
+"79
+[v OS_Scheduler@sleep sleep `uc  1 a 1 27 ]
+"107
+} 0
+"63
+[v _OS_Launch OS_Launch `(v  1 e 1 0 ]
+{
+"66
+} 0
+"12 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\clock.c
+[v _CLOCK_Task CLOCK_Task `(v  1 e 1 0 ]
+{
+"14
+[v CLOCK_Task@STATE_CLOCK STATE_CLOCK `uc  1 s 1 STATE_CLOCK ]
+"41
+} 0
+"10 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\PICBot.c
+[v _PICBOT_Task PICBOT_Task `(v  1 e 1 0 ]
+{
+"12
+[v PICBOT_Task@command command `ui  1 a 2 39 ]
+"13
+[v PICBOT_Task@status status `E128  1 a 1 38 ]
+"59
+} 0
+"45 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.c
+[v _IR_Task IR_Task `(v  1 e 1 0 ]
+{
+"47
+[v IR_Task@prvLevel prvLevel `uc  1 s 1 prvLevel ]
+"81
+} 0
+"68 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\main.c
+[v _task4 task4 `(v  1 e 1 0 ]
+{
+"75
+} 0
+"108 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sema.c
+[v _SEMA_WaitForTask4 SEMA_WaitForTask4 `(uc  1 e 1 0 ]
+{
+"114
+} 0
+"35
+[v _SEMA_WaitForPICBot SEMA_WaitForPICBot `(uc  1 e 1 0 ]
+{
+"41
+} 0
+"48
+[v _SEMA_SetClock SEMA_SetClock `(v  1 e 1 0 ]
+{
+"51
+} 0
+"43
+[v _SEMA_BlockOnPICBot SEMA_BlockOnPICBot `(v  1 e 1 0 ]
+{
+"46
+} 0
+"77 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\PICBot.c
+[v _PICBOT_rvs PICBOT_rvs `(v  1 e 1 0 ]
+{
+"84
+} 0
+"94
+[v _PICBOT_rgt PICBOT_rgt `(v  1 e 1 0 ]
+{
+"100
+} 0
+"86
+[v _PICBOT_lft PICBOT_lft `(v  1 e 1 0 ]
+{
+"92
+} 0
+"69
+[v _PICBOT_fwd PICBOT_fwd `(v  1 e 1 0 ]
+{
+"75
+} 0
+"35 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sw_fifo.c
+[v _Fifo_Get Fifo_Get `(E29  1 e 1 0 ]
+{
+[v Fifo_Get@datapt datapt `*.39ui  1 p 2 21 ]
+"43
+} 0
+"23 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\debug.c
+[v _DEBUG_Pin0Toggle DEBUG_Pin0Toggle `(v  1 e 1 0 ]
+{
+"26
+} 0
+"93 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.c
+[v _ir_bitcollect ir_bitcollect `(v  1 e 1 0 ]
+{
+"95
+[v ir_bitcollect@n n `uc  1 a 1 36 ]
+"105
+} 0
+"88
+[v _ir_Begin ir_Begin `(v  1 e 1 0 ]
+{
+"92
+} 0
+"83
+[v _ir_end ir_end `(v  1 e 1 0 ]
+{
+"87
+} 0
+"109
+[v _ir_terminate ir_terminate `(v  1 e 1 0 ]
+{
+"114
+} 0
+"30 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sema.c
+[v _SEMA_SetPICBot SEMA_SetPICBot `(v  1 e 1 0 ]
+{
+"33
+} 0
+"143 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\os.c
+[v _OS_Signal OS_Signal `(v  1 e 1 0 ]
+{
+"145
+[s S104 tcb 6 `*.37(v 1 func 2 0 `*.39S104 1 next 2 2 `*.39c 1 blocked 2 4 ]
+[v OS_Signal@pt pt `*.39S104  1 a 2 34 ]
+"146
+[v OS_Signal@PrvPt PrvPt `*.39S104  1 a 2 32 ]
+"143
+[v OS_Signal@semaPt semaPt `*.39c  1 p 2 21 ]
+"179
+} 0
+"23 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sw_fifo.c
+[v _Fifo_Put Fifo_Put `(E3852  1 e 1 0 ]
+{
+[v Fifo_Put@data data `ui  1 p 2 21 ]
+"32
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 31 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 30 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 21 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 23 ]
+"31
+} 0
+"25 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sema.c
+[v _SEMA_BlockOnIRdetect SEMA_BlockOnIRdetect `(v  1 e 1 0 ]
+{
+"28
+} 0
+"186 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\os.c
+[v _OS_Block OS_Block `(v  1 e 1 0 ]
+{
+[v OS_Block@semaPt semaPt `*.39c  1 p 2 21 ]
+"193
+} 0
+"53 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sema.c
+[v _SEMA_WaitForClock SEMA_WaitForClock `(uc  1 e 1 0 ]
+{
+"59
+} 0
+"114 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\os.c
+[v _OS_Wait OS_Wait `(uc  1 e 1 0 ]
+{
+"116
+[v OS_Wait@ret ret `uc  1 a 1 31 ]
+"114
+[v OS_Wait@semaPt semaPt `*.39c  1 p 2 21 ]
+"132
+} 0
+"61 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\PICBot.c
+[v _PICBOT_Stop PICBOT_Stop `(v  1 e 1 0 ]
+{
+"67
+} 0
+"4 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\wheel4d.c
+[v _Wheel_Front_Right Wheel_Front_Right `(v  1 e 1 0 ]
+{
+[v Wheel_Front_Right@motion motion `E1  1 a 1 wreg ]
+[v Wheel_Front_Right@motion motion `E1  1 a 1 wreg ]
+[v Wheel_Front_Right@motion motion `E1  1 a 1 31 ]
+"23
+} 0
+"108
+[v _Motor_Right_B_1B Motor_Right_B_1B `(v  1 e 1 0 ]
+{
+[v Motor_Right_B_1B@dir dir `uc  1 a 1 wreg ]
+[v Motor_Right_B_1B@dir dir `uc  1 a 1 wreg ]
+"110
+[v Motor_Right_B_1B@dir dir `uc  1 a 1 30 ]
+"111
+} 0
+"103
+[v _Motor_Right_B_1A Motor_Right_B_1A `(v  1 e 1 0 ]
+{
+[v Motor_Right_B_1A@dir dir `uc  1 a 1 wreg ]
+[v Motor_Right_B_1A@dir dir `uc  1 a 1 wreg ]
+"105
+[v Motor_Right_B_1A@dir dir `uc  1 a 1 30 ]
+"106
+} 0
+"25
+[v _Wheel_Front_Left Wheel_Front_Left `(v  1 e 1 0 ]
+{
+[v Wheel_Front_Left@motion motion `E1  1 a 1 wreg ]
+[v Wheel_Front_Left@motion motion `E1  1 a 1 wreg ]
+[v Wheel_Front_Left@motion motion `E1  1 a 1 31 ]
+"45
+} 0
+"138
+[v _Motor_Left_A_1B Motor_Left_A_1B `(v  1 e 1 0 ]
+{
+[v Motor_Left_A_1B@dir dir `uc  1 a 1 wreg ]
+[v Motor_Left_A_1B@dir dir `uc  1 a 1 wreg ]
+"140
+[v Motor_Left_A_1B@dir dir `uc  1 a 1 30 ]
+"141
+} 0
+"133
+[v _Motor_Left_A_1A Motor_Left_A_1A `(v  1 e 1 0 ]
+{
+[v Motor_Left_A_1A@dir dir `uc  1 a 1 wreg ]
+[v Motor_Left_A_1A@dir dir `uc  1 a 1 wreg ]
+"135
+[v Motor_Left_A_1A@dir dir `uc  1 a 1 30 ]
+"136
+} 0
+"47
+[v _Wheel_Back_Right Wheel_Back_Right `(v  1 e 1 0 ]
+{
+[v Wheel_Back_Right@motion motion `E1  1 a 1 wreg ]
+[v Wheel_Back_Right@motion motion `E1  1 a 1 wreg ]
+[v Wheel_Back_Right@motion motion `E1  1 a 1 31 ]
+"67
+} 0
+"118
+[v _Motor_Right_A_1B Motor_Right_A_1B `(v  1 e 1 0 ]
+{
+[v Motor_Right_A_1B@dir dir `uc  1 a 1 wreg ]
+[v Motor_Right_A_1B@dir dir `uc  1 a 1 wreg ]
+"120
+[v Motor_Right_A_1B@dir dir `uc  1 a 1 30 ]
+"121
+} 0
+"113
+[v _Motor_Right_A_1A Motor_Right_A_1A `(v  1 e 1 0 ]
+{
+[v Motor_Right_A_1A@dir dir `uc  1 a 1 wreg ]
+[v Motor_Right_A_1A@dir dir `uc  1 a 1 wreg ]
+"115
+[v Motor_Right_A_1A@dir dir `uc  1 a 1 30 ]
+"116
+} 0
+"69
+[v _Wheel_Back_Left Wheel_Back_Left `(v  1 e 1 0 ]
+{
+[v Wheel_Back_Left@motion motion `E1  1 a 1 wreg ]
+[v Wheel_Back_Left@motion motion `E1  1 a 1 wreg ]
+[v Wheel_Back_Left@motion motion `E1  1 a 1 31 ]
+"89
+} 0
+"128
+[v _Motor_Left_B_1B Motor_Left_B_1B `(v  1 e 1 0 ]
+{
+[v Motor_Left_B_1B@dir dir `uc  1 a 1 wreg ]
+[v Motor_Left_B_1B@dir dir `uc  1 a 1 wreg ]
+"130
+[v Motor_Left_B_1B@dir dir `uc  1 a 1 30 ]
+"131
+} 0
+"123
+[v _Motor_Left_B_1A Motor_Left_B_1A `(v  1 e 1 0 ]
+{
+[v Motor_Left_B_1A@dir dir `uc  1 a 1 wreg ]
+[v Motor_Left_B_1A@dir dir `uc  1 a 1 wreg ]
+"125
+[v Motor_Left_B_1A@dir dir `uc  1 a 1 30 ]
+"126
+} 0
+"58 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\clock.c
+[v _CLOCK_ReadTimer CLOCK_ReadTimer `(ui  1 e 2 0 ]
+{
+"61
+} 0
+"42 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_tmr0.c
+[v _TMR0_ReadTimer TMR0_ReadTimer `(ui  1 e 2 0 ]
+{
+"44
+[v TMR0_ReadTimer@readVal readVal `ui  1 a 2 32 ]
+"49
+} 0
+"37 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\os.c
+[v _OS_AddThreads OS_AddThreads `(v  1 e 1 0 ]
+{
+[v OS_AddThreads@func1 func1 `*.37(v  1 p 2 21 ]
+"38
+[v OS_AddThreads@func2 func2 `*.37(v  1 p 2 23 ]
+"39
+[v OS_AddThreads@func3 func3 `*.37(v  1 p 2 25 ]
+"40
+[v OS_AddThreads@func4 func4 `*.37(v  1 p 2 27 ]
+"58
+} 0
+"4 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\led.c
+[v _LED_Enable LED_Enable `(v  1 e 1 0 ]
+{
+"10
+} 0
+"123 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.c
+[v _IR_Init IR_Init `(v  1 e 1 0 ]
+{
+"128
+} 0
+"10 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sw_fifo.c
+[v _Fifo_Init Fifo_Init `(v  1 e 1 0 ]
+{
+"12
+[v Fifo_Init@i i `i  1 a 2 30 ]
+"20
+} 0
+"8 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_interrupt.c
+[v _INTERRUPT_Enable INTERRUPT_Enable `(v  1 e 1 0 ]
+{
+"12
+} 0
+"14 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_int0.c
+[v _INT0_Enable INT0_Enable `(v  1 e 1 0 ]
+{
+"20
+} 0
+"6 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\debug.c
+[v _DEBUG_Pin0Enable DEBUG_Pin0Enable `(v  1 e 1 0 ]
+{
+"12
+} 0
+"10 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_config.c
+[v _CONFIG_mcu CONFIG_mcu `(v  1 e 1 0 ]
+{
+"21
+} 0
+"8 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_tmr0.c
+[v _TMR0_Init TMR0_Init `(v  1 e 1 0 ]
+{
+"28
+} 0
+"4 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_ports.c
+[v _PORTS_Init PORTS_Init `(v  1 e 1 0 ]
+{
+"19
+} 0
+"5 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_oscillator.c
+[v _OSCILLATOR_Init OSCILLATOR_Init `(v  1 e 1 0 ]
+{
+"15
+} 0
+"14 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_interrupt.c
+[v _INTERRUPT_Init INTERRUPT_Init `(v  1 e 1 0 ]
+{
+"85
+} 0
+"5 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_int0.c
+[v _INT0_Init INT0_Init `(v  1 e 1 0 ]
+{
+"12
+} 0
+"27
+[v _INT0_FallingEdge INT0_FallingEdge `(v  1 e 1 0 ]
+{
+"30
+} 0
+"42 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\clock.c
+[v _CLOCK_Enable CLOCK_Enable `(v  1 e 1 0 ]
+{
+"45
+} 0
+"30 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_tmr0.c
+[v _TMR0_Enable TMR0_Enable `(v  1 e 1 0 ]
+{
+"34
+} 0
+"37 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\isr.c
+[v _LowISR LowISR `IIL(v  1 e 1 0 ]
+{
+"40
+} 0
+"11
+[v _HighISR HighISR `II(v  1 e 1 0 ]
+{
+"35
+} 0
+"27 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_int0.c
+[v i2_INT0_FallingEdge INT0_FallingEdge `(v  1 e 1 0 ]
+{
+"30
+} 0
+"12 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\sema.c
+[v _SEMA_SetIRdetect SEMA_SetIRdetect `(v  1 e 1 0 ]
+{
+"15
+} 0
+"143 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\os.c
+[v i2_OS_Signal OS_Signal `(v  1 e 1 0 ]
+{
+[s S104 tcb 6 `*.37(v 1 func 2 0 `*.39S104 1 next 2 2 `*.39c 1 blocked 2 4 ]
+[v i2OS_Signal@pt OS_Signal `*.39S104  1 a 2 6 ]
+[v i2OS_Signal@PrvPt OS_Signal `*.39S104  1 a 2 4 ]
+[v i2OS_Signal@semaPt semaPt `*.39c  1 p 2 0 ]
+"179
+} 0
+"11 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\led.c
+[v _LED_On LED_On `(v  1 e 1 0 ]
+{
+"14
+} 0
+"16
+[v _LED_Off LED_Off `(v  1 e 1 0 ]
+{
+"19
+} 0
+"36 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.h
+[s S906 . 3 `ui 1 dtime 2 0 `uc 1 level 1 2 ]
+"118 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\irdetect.c
+[v _IR_handle IR_handle `(*.39S906  1 e 2 0 ]
+{
+"121
+} 0
+"22 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_int0.c
+[v _INT0_RisingEdge INT0_RisingEdge `(v  1 e 1 0 ]
+{
+"25
+} 0
+"69 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\clock.c
+[v _CLOCK_Time_Tick CLOCK_Time_Tick `(ui  1 e 2 0 ]
+{
+"71
+[v CLOCK_Time_Tick@tick_time tick_time `ui  1 a 2 10 ]
+"80
+} 0
+"58
+[v i2_CLOCK_ReadTimer CLOCK_ReadTimer `(ui  1 e 2 0 ]
+{
+"61
+} 0
+"42 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_tmr0.c
+[v i2_TMR0_ReadTimer TMR0_ReadTimer `(ui  1 e 2 0 ]
+{
+[v i2TMR0_ReadTimer@readVal TMR0_ReadTimer `ui  1 a 2 4 ]
+"49
+} 0
+"42 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\clock.c
+[v i2_CLOCK_Enable CLOCK_Enable `(v  1 e 1 0 ]
+{
+"45
+} 0
+"30 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_tmr0.c
+[v i2_TMR0_Enable TMR0_Enable `(v  1 e 1 0 ]
+{
+"34
+} 0
+"52 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\clock.c
+[v _CLOCK_Reload CLOCK_Reload `(v  1 e 1 0 ]
+{
+"55
+} 0
+"53 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_tmr0.c
+[v _TMR0_Reload TMR0_Reload `(v  1 e 1 0 ]
+{
+"58
+} 0
+"47 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\clock.c
+[v _CLOCK_Disable CLOCK_Disable `(v  1 e 1 0 ]
+{
+"50
+} 0
+"36 C:\Users\Murtuza\Dropbox\Engineering\GitHub\PIC-Robot\PicRobot.X\mcu_tmr0.c
+[v _TMR0_Disable TMR0_Disable `(v  1 e 1 0 ]
+{
+"40
+} 0
